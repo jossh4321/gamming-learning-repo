@@ -4,12 +4,7 @@
       <!--columna 1-->
       <v-row style="margin-right:7px">
         <v-col cols="12">
-<<<<<<< HEAD
-          <v-card width="inherit" min-height="700" class outlined>
-          </v-card>
-=======
           <v-card width="inherit" min-height="750" class outlined>Hola 1</v-card>
->>>>>>> d807f8775514250868ae4493757bd4bea8a59360
         </v-col>
         <v-col cols="12">
           <v-card class="mx-auto" width="inherit" min-height="40px">
@@ -31,7 +26,7 @@
                   class="ma-2 white--text"
                   width="100%"
                   height="100%"
-                  @click="cambiarValor()"
+                  @click="dialogoTienda=true"
                 >
                   <v-icon right dark>mdi-gamepad-variant-outline</v-icon>
                   <span style="margin-left:20px">Tienda</span>
@@ -41,10 +36,10 @@
 
               </v-card>
               <v-dialog v-model="dialogoTienda" >
-                  <v-card width="500px" heigth="500px">
-                    <v-card-title class="headline">Tienda</v-card-title>
-                  </v-card>
-                </v-dialog>
+                <v-card width="500px" heigth="500px">
+                  <v-card-title class="headline">Tienda</v-card-title>
+                </v-card>
+              </v-dialog>
             </v-col>
             <v-col>
               <v-card class="item" outlined>
