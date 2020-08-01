@@ -4,7 +4,8 @@
       <!--columna 1-->
       <v-row style="margin-right:7px">
         <v-col cols="12">
-          <v-card width="inherit" min-height="700" class outlined>Hola 1</v-card>
+          <v-card width="inherit" min-height="700" class outlined>
+          </v-card>
         </v-col>
         <v-col cols="12">
           <v-card class="mx-auto" width="inherit" min-height="40px">
