@@ -1,5 +1,5 @@
 <template>
- <v-container fluid>
+  <v-container >
     <v-data-iterator
       :items="items"
       :items-per-page.sync="itemsPerPage"
@@ -12,14 +12,21 @@
           dark
           flat
         >
-          <v-toolbar-title>Hero's Items</v-toolbar-title>
+          <v-toolbar-title>This is a header</v-toolbar-title>
         </v-toolbar>
       </template>
 
       <template v-slot:default="props">
-       
-            <v-card  v-for="item in props.items"
-            :key="item.name" >
+        <v-row>
+          <v-col
+            v-for="item in props.items"
+            :key="item.name"
+            cols="12"
+            sm="6"
+            md="4"
+            lg="3"
+          >
+            <v-card>
               <v-card-title class="subheading font-weight-bold">{{ item.name }}</v-card-title>
 
               <v-divider></v-divider>
@@ -36,19 +43,21 @@
                 </v-list-item>
 
                 <v-list-item>
-                  <v-list-item-content>hardness:</v-list-item-content>
+                  <v-list-item-content>Hardness:</v-list-item-content>
                   <v-list-item-content class="align-end">{{ item.hardness }}</v-list-item-content>
                 </v-list-item>
 
                 <v-list-item>
-                  <v-list-item-content>Damage:</v-list-item-content>
-                  <v-list-item-content class="align-end">{{ item.Damage }}</v-list-item-content>
+                  <v-list-item-content>Gauntlet:</v-list-item-content>
+                  <v-list-item-content class="align-end">{{ item.Gauntlet }}</v-list-item-content>
                 </v-list-item>
               </v-list>
             </v-card>
+          </v-col>
+        </v-row>
       </template>
     </v-data-iterator>
-    </v-container>
+  </v-container>
 </template>
 <script>
   export default {
@@ -84,13 +93,13 @@
           hardness: 877,
           Damage: 673
         },
-        {
+        /*{
           name: 'Neckless',
           Sharpness: 134,
           Weigth: 789,
           hardness: 456,
           Damage: 789
-        },
+        },*/
       ],
     }),
   }
