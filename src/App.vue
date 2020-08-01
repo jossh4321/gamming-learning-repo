@@ -76,8 +76,9 @@
             <div class="sidebar-submenu">
               <ul>
                 <li>
-                  <a href="#"> Gamming Learning
-                  </a>
+                  <!--a href="#"> Hero Figth
+                  </a-->
+                  <router-link to="/Alumno/game">Hero Figth</router-link>
                 </li>
                 <li>
                   <a href="#">Entorno Virtual</a>
