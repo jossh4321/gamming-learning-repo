@@ -5,11 +5,11 @@ import Home from '../views/Home.vue'
 Vue.use(VueRouter)
 
   const routes = [
-  /*{
-    path: '/',
+  {
+    path: '/Home',
     name: 'Home',
     component: Home
-  },*/
+  },
   {
     path: '/',
     name: 'anuncios',

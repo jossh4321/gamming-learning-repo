@@ -31,14 +31,18 @@
                   <v-icon right dark>mdi-gamepad-variant-outline</v-icon>
                   <span style="margin-left:20px">Tienda</span>
                 </v-btn>
-                
-
-
               </v-card>
+<<<<<<< HEAD
               <v-dialog v-model="dialogoTienda" >
                 <v-card width="500px" heigth="500px">
                   <v-card-title class="headline">Tienda</v-card-title>
                 </v-card>
+=======
+              <v-dialog v-model="this.dialogoTienda" >
+                  <v-card width="500px" heigth="500px">
+                    <v-card-title class="headline">Tienda</v-card-title>
+                  </v-card>
+>>>>>>> 763f8b7c0ca4b67cc2c20ae9f329ea52d39c8e12
               </v-dialog>
             </v-col>
             <v-col>
@@ -98,9 +102,6 @@
         </v-col>
       </v-row>
     </v-row>
-
-    
-
     <v-dialog v-model="dialogoMonedero" width="500px" heigth="500px">
       <v-card>
         <v-card-title class="headline">Monedero</v-card-title>
@@ -135,6 +136,7 @@ export default {
       dialogoTienda: false,
       dialogoMonedero: false,
       dialogoHeroes: false,
+      dialog: false
     };
   },
   methods:{
