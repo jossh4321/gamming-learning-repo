@@ -4,7 +4,7 @@
       <!--columna 1-->
       <v-row style="margin-right:7px">
         <v-col cols="12">
-          <v-card width="inherit" min-height="700" class outlined>Hola 1</v-card>
+          <v-card width="inherit" min-height="750" class outlined>Hola 1</v-card>
         </v-col>
         <v-col cols="12">
           <v-card class="mx-auto" width="inherit" min-height="40px">
@@ -16,30 +16,34 @@
         </v-col>
       </v-row>
 
-      <v-row>
+      <v-row style="300px">
         <v-col cols="12">
           <v-card class="mx-auto" width="inherit" outlined>Hola 1</v-card>
         </v-col>
         <v-col cols="12">
-          <v-card class="mx-auto" max-width="inherit" outlined>Hola 2</v-card>
+          <v-card class="mx-auto" width="500px" height="430px" outlined>
+             <HeroItems></HeroItems>
+          </v-card>
         </v-col>
         <v-col cols="12">
           <v-card class="mx-auto" max-width="inherit" outlined>
-            <v-list disabled>
+            <v-list nav dense>
               <v-subheader>Estadistica de el Heroe</v-subheader>
-              <v-list-item-group v-model="item" color="primary">
-                <v-list-item v-for="(item, i) in items" :key="i">
-                  <v-list-item-icon>
-                    <v-icon v-text="item.icon"></v-icon>
-                  </v-list-item-icon>
-                  <v-list-item-content style="margin-left:5px">
-                    <v-list-item-title v-text="item.text"></v-list-item-title>
-                  </v-list-item-content>
-                  <v-list-item-content style="margin-left:5px">
-                    <v-list-item-title v-text="item.score"></v-list-item-title>
-                  </v-list-item-content>
-                </v-list-item>
-              </v-list-item-group>
+              
+                <v-list-item-group v-model="item" color="primary">
+                  <v-list-item v-for="(item, i) in items" :key="i">
+                    <v-list-item-icon>
+                      <v-icon v-text="item.icon"></v-icon>
+                    </v-list-item-icon>
+                    <v-list-item-content style="margin-left:5px">
+                      <v-list-item-title v-text="item.text"></v-list-item-title>
+                    </v-list-item-content>
+                    <v-list-item-content style="margin-left:5px">
+                      <v-list-item-title v-text="item.score"></v-list-item-title>
+                    </v-list-item-content>
+                  </v-list-item>
+                </v-list-item-group>
+
             </v-list>
           </v-card>
         </v-col>
@@ -48,17 +52,21 @@
   </v-container>
 </template>
 <script>
+import HeroItems from '@/components/HeroItems.vue'
 export default {
   name: "game",
+  components: {
+    HeroItems
+  },
   data: () => ({
     item: 1,
     items: [
-      { text: "Fuerza", icon: "mdi-clock" , score:789},
-      { text: "Habilidad", icon: "mdi-account" , score:1790},
-      { text: "Salud", icon: "mdi-flag" , score:10000},
-      { text: "Especial", icon: "mdi-clock" , score:4567},
-      { text: "Furia", icon: "mdi-account", score:1230 },
-      { text: "Velocidad", icon: "mdi-flag" , score:1980},
+      { text: "Strength", icon: "mdi-clock" , score:789},
+      { text: "Skills", icon: "mdi-account" , score:1790},
+      { text: "Health", icon: "mdi-flag" , score:10000},
+      { text: "Special", icon: "mdi-clock" , score:4567},
+      { text: "Anger", icon: "mdi-account", score:1230 },
+      { text: "Speed", icon: "mdi-flag" , score:1980},
     ],
   }),
 };
