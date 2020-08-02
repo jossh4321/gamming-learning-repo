@@ -706,6 +706,24 @@ body {
   /*background-attachment: fixed;*/
   background-size: cover;
 }
+.level{
+  background-image: url('assets/card1.jpg');
+  /*background-repeat: no-repeat;*/
+  /*background-attachment: fixed;*/
+  background-size: cover;
+}
+.descripcion{
+  background-image: url('assets/card3.jpg');
+  /*background-repeat: no-repeat;
+  background-attachment: fixed;*/
+  background-size: cover;
+}
+.misiones{
+    background-image: url('assets/misionesdiarias.jpg');
+  /*background-repeat: no-repeat;
+  background-attachment: fixed;*/
+  background-size: cover;
+}
 /*#nav {
   padding: 30px;
 }
