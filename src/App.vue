@@ -204,8 +204,8 @@
     </div>
   </nav>
   <!-- sidebar-wrapper  -->
-  <main class="page-content">
-    <div class="container">
+  <main class="page-content back">
+    <div class="">
         <div style="min-height:800px;width:100%">
               <router-view></router-view>
         </div>
@@ -657,6 +657,54 @@ body {
 }
 .chiller-theme .sidebar-footer>a:last-child {
     border-right: none;
+}
+.back{
+  background-image: url('assets/0e35fa04-48c8-4973-9425-473834f9da8a.jpg');
+  background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.card1{
+  background-image: url('assets/card1.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.card2{
+  background-image: url('assets/card2.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.card3{
+  background-image: url('assets/card3.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.card4{
+  background-image: url('assets/card4.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.sword{
+   background-image: url('assets/espada.jpg');
+  /*background-repeat: no-repeat;*/
+  /*background-attachment: fixed;*/
+  background-size: cover;
+}
+.sword2{
+   background-image: url('assets/espada2.jpg');
+  /*background-repeat: no-repeat;*/
+  /*background-attachment: fixed;*/
+  background-size: cover;
+}
+.heroe1{
+   background-image: url('assets/heroe1.jpg');
+  /*background-repeat: no-repeat;*/
+  /*background-attachment: fixed;*/
+  background-size: cover;
 }
 /*#nav {
   padding: 30px;
